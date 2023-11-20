@@ -11,6 +11,11 @@
     --bouton-gradient: linear-gradient(193deg,var(--primary) -11.44%,#FF79DA 123.93%)
 }
 
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
 body{
     margin: 0px;
 }
@@ -94,3 +99,56 @@ header{
     .text__card{
         margin-left: 27px;
     }
+
+    /*** Restaurants ***/
+    
+    .restaurant__title{
+        margin-left: 20px;
+    }
+    .restaurant__card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .restaurant__card img{
+        width: 100%;
+        border-top-right-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+
+    .card__restaurant{
+        display: flex;
+        flex-direction: column;
+        border-radius: 15px;
+        min-height: 250px;
+        margin: 0px 18px 18px 17px;
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+    }
+
+    .card__restaurant-content{
+        gap: 0px;
+        margin-left: 13px;
+    }
+
+
+/****** Footer ******/
+
+footer{
+    color: white;
+    background-color:#353535;
+    padding:22px 25px;
+}
+
+footer img{
+    width: 139px;
+    margin-bottom: 16px;
+}
+
+.footer__liens{
+    display: flex;
+    flex-direction: column;
+}
+
+.text__gras{
+    margin-left: 11px;
+}
