@@ -14,24 +14,45 @@
 </head>
 <body>
     <header>
-        <img src="asset/Images et textes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="Logp ohmyfood">
-        <p>
-        <i class="fa-solid fa-location-dot"></i>Paris, Belleville
-    </p>
+        <div class="header__logo">
+            <img src="asset/Images et textes Ohmyfood/images/logo/ohmyfood@2x.svg" alt="Logp ohmyfood">
+        </div>
+        <div class="header__emplacement">
+            <p>
+         <i class="fa-solid fa-location-dot"></i><span class="header__ville">Paris, Belleville</span>
+            </p>
+        </div>
     </header>
     <main>
-    <h1>Réservez le menu qui vous convient</h1>
-        <p>
-            Découvrez des restaurants d’exception, sélectionnés par nos soins.
-        </p>
-        <div>
-            <button class="bouton__restaurant" type="button">Explorer nos restaurants</button>
-        </div>
-        <section class="Fonctionnement">
+        <section class="exploration__restaurant">
+            <h1>Réservez le menu qui vous convient</h1>
+                 <p class="sous__titre">
+                     Découvrez des restaurants d’exception, sélectionnés par nos soins.
+                </p>
             <div>
-                <h2>Fonctionnement</h2>
+                <button class="bouton__restaurant" type="button">Explorer nos restaurants</button>
             </div>
+        </section>
+        <section class="fonctionnement">
             <div>
+                <h2 class="titre__fonctionnement">Fonctionnement</h2>
+            </div>
+            <div class="fonctionnement__card">
+                <article class="card">
+                    <p>
+                    <i class="fa-solid fa-mobile-screen-button"></i><span class="text__card">Choisissez un restaurant</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <p>
+                        <i class="fa-solid fa-list"></i><span class="text__card">Choisissez votre menu</span>
+                    </p>
+                </article>
+                <article class="card">
+                    <p>
+                        <i class="fa-solid fa-store"></i><span class="text__card">Dégustez au restaurant</span>
+                    </p>
+                </article>
                 
             </div>
         </section>
