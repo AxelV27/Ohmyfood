@@ -23,7 +23,6 @@ body{
 .card{
     display: flex;
     align-items: center;
-    justify-content: center;
     background-color: var(--main-color-background);
     border-radius: 20px;
     box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.15);
@@ -71,6 +70,7 @@ header{
 }
 
 .bouton__restaurant{
+    cursor: pointer;
     border-radius: 25px;
     background:var(--bouton-gradient);
     color: white;
@@ -100,6 +100,24 @@ header{
         margin-left: 27px;
     }
 
+    .eclipse{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 23px;
+        border: 2px solid;
+        border-color:var(--primary);
+        border-radius: 20px;
+        height: 20px;
+        width: 20px;
+        background-color: var(--primary);
+    }
+
+    .numero__eclipse{
+        margin: 0;
+        color: white;
+    }
+
     /*** Restaurants ***/
     
     .restaurant__title{
@@ -108,6 +126,20 @@ header{
     .restaurant__card{
         display: flex;
         flex-direction: column;
+    }
+
+    .languette__nouveau{
+        display: flex;
+        flex-direction: row-reverse;
+        width: 89px;
+        min-height: 29px;
+        margin-left: 236px;
+        justify-content: center;
+        align-items: center;
+        color: #008766;
+        background-color: var(--Green);
+        border-radius: 2px;
+        position: absolute;
     }
 
     .restaurant__card img{
@@ -123,11 +155,25 @@ header{
         min-height: 250px;
         margin: 0px 18px 18px 17px;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.10);
+        position: relative;
     }
 
     .card__restaurant-content{
-        gap: 0px;
+        display: flex;
+        flex-direction: row;
         margin-left: 13px;
+    }
+    
+    .card__restaurant-content-title{
+        margin-bottom: 0;
+    }
+    .card__restaurant-content-subtitle{
+        margin-top: 0;
+    }
+    
+    .card__restaurant-content i{
+        margin-top: 30px;
+        margin-left: 150px;
     }
 
 
