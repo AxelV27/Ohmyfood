@@ -133,13 +133,15 @@ header{
         flex-direction: row-reverse;
         width: 89px;
         min-height: 29px;
-        margin-left: 236px;
+        margin: 0;
         justify-content: center;
         align-items: center;
         color: #008766;
         background-color: var(--Green);
         border-radius: 2px;
         position: absolute;
+        right: 12px;
+        top: 15px;
     }
 
     .restaurant__card img{
@@ -162,7 +164,9 @@ header{
     .card__restaurant-content{
         display: flex;
         flex-direction: row;
-        margin-left: 13px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0px 15px;
     }
     
     .card__restaurant-content-title{
