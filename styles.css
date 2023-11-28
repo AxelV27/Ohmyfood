@@ -172,10 +172,13 @@ header{
         justify-content: space-between;
         padding: 0px 15px;
     }
-    
+
+
+
     .card__restaurant-content-title{
         margin-bottom: 0;
     }
+
     .card__restaurant-content-subtitle{
         margin-top: 0;
     }
