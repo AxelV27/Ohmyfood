@@ -34,7 +34,25 @@
 }
 
 /*** Menu ***/
+    .menu__title .fa-regular{
+    position: absolute;
+    right: 15px;
+}
 
+
+    .menu__title .fa-solid{
+    position: absolute;
+    right: 15px;
+    color: transparent;
+    background-image: linear-gradient(#9356DC,#FF79DA);
+    background-clip:text;
+    -webkit-background-clip: text;
+    opacity: 0;
+}
+
+ .menu__title .fa-solid:hover{
+    opacity: 1;
+}
 .menu{
     position: relative;
     background-color: white;
@@ -84,6 +102,11 @@
     margin-bottom: 0;
 }
 
+.card__menu-content-prix{
+    display: flex;
+    align-items: flex-end;
+}
+
 .verification{
     margin: -16px -80px -16px 16px;
     width: 64px;
@@ -91,14 +114,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 0 15px 15px 0;
 }
 
 .verification__icon{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 100px;
-    transition-duration: 400ms;
 }
 
 .plats,.desserts{
