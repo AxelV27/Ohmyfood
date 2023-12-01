@@ -9,6 +9,14 @@
 }
 
 
+@keyframes spin{
+    0%{
+        transform: rotate(-270deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
 /****** Hearder ******/
 
 .header__menu{
@@ -75,18 +83,27 @@
 .card__menu{
     border-radius: 15px;
     box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.15);
-    max-height: 69px;
     margin: 0px 10px 10px 12px;
     overflow: hidden;
     animation: menuAppear 600ms;
     animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     animation-fill-mode: both;
     transform: scale(0);
+    &:hover{ 
+        .card__menu-content-check{
+        margin-right: 0;
+    }
+    i{
+        animation-duration: 200ms;
+        animation-name: spin;
+    }
+    }
 }
     .card__menu-content{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        overflow: hidden;
         .card__menu-content-prix{
             display: flex;
             align-items: flex-end;
@@ -94,10 +111,14 @@
             padding: 16px;
         }
         .card__menu-content-title{
+            overflow: hidden;
             padding: 16px;
             p,h3{
                 margin-top: 0;
                 margin-bottom: 0;
+                overflow: hidden;
+                text-overflow:ellipsis ;
+                white-space: nowrap;
             }
         }
         .card__menu-content-check{
@@ -106,6 +127,7 @@
             background-color: #99E2D0;
             margin-right: -60px;
             width: 60px;
+            transition: all 500ms;
             & i{
                 display: grid;
                 place-items:center;
