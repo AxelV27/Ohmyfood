@@ -44,11 +44,11 @@
 .menu__title .menu__title-font {
   font-family: "Shrikhand", sans-serif;
 }
-.menu__title .menu__title .fa-regular {
+.menu__title .fa-regular {
   position: absolute;
   right: 15px;
 }
-.menu__title .menu__title .fa-solid {
+.menu__title .fa-solid {
   position: absolute;
   right: 15px;
   color: transparent;
@@ -57,7 +57,7 @@
   -webkit-background-clip: text;
   opacity: 0;
 }
-.menu__title .menu__title .fa-solid:hover {
+.menu__title .fa-solid:hover {
   opacity: 1;
 }
 
@@ -91,7 +91,7 @@
 .card__menu-content .card__menu-content-title {
   padding: 16px;
 }
-.card__menu-content .card__menu-content-title .card__menu-content-title p, .card__menu-content .card__menu-content-title h3 {
+.card__menu-content .card__menu-content-title p, .card__menu-content .card__menu-content-title h3 {
   margin-top: 0;
   margin-bottom: 0;
 }

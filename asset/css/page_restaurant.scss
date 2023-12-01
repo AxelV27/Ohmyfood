@@ -49,11 +49,11 @@
     .menu__title-font{
         font-family: 'Shrikhand',sans-serif;
     }
-    .menu__title .fa-regular{
+     .fa-regular{
         position: absolute;
         right: 15px;
     }
-    .menu__title .fa-solid{
+    .fa-solid{
         position: absolute;
         right: 15px;
         color: transparent;
@@ -62,7 +62,7 @@
         -webkit-background-clip: text;
         opacity: 0;
     }
-    .menu__title .fa-solid:hover{
+     .fa-solid:hover{
         opacity: 1;
     }
 }
@@ -95,7 +95,7 @@
         }
         .card__menu-content-title{
             padding: 16px;
-            .card__menu-content-title p,h3{
+            p,h3{
                 margin-top: 0;
                 margin-bottom: 0;
             }
