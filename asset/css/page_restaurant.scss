@@ -80,16 +80,28 @@
     margin-left: 10px;
 }
 
+.entrees,.plats,.desserts{
+    animation: menuAppear 600ms;
+    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
+    animation-fill-mode: both;
+    transform: scale(0);
+   }
+
+.plats{
+    animation-delay: 600ms; 
+}
+.desserts{
+    animation-delay: 600ms;
+}
 
 .card__menu{
     border-radius: 15px;
     box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.15);
     margin: 0px 10px 10px 12px;
     overflow: hidden;
-    animation: menuAppear 600ms;
-    animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
-    animation-fill-mode: both;
-    transform: scale(0);
+   
+
+    
     &:hover{ 
         .card__menu-content-check{
         margin-right: 0;
