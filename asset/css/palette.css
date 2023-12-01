@@ -76,15 +76,12 @@
 }
 
 .card__menu{
-    display: flex;
-    flex-direction: column;
     border-radius: 15px;
     box-shadow: 0px 4px 15px 0px rgba(0,0,0,0.15);
     max-height: 69px;
-    padding: 15px;
     margin: 0px 10px 10px 12px;
     overflow: hidden;
-    animation: menuAppear 0.6s;
+    animation: menuAppear 600ms;
     animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     animation-fill-mode: both;
     transform: scale(0);
@@ -93,34 +90,44 @@
 .card__menu-content{
     display: flex;
     flex-direction: row;
-    align-items: center;
     justify-content: space-between;
 }
 
-.card__menu-content-title p,h3{
-    margin-top: 0;
-    margin-bottom: 0;
-}
 
 .card__menu-content-prix{
     display: flex;
     align-items: flex-end;
+    margin-left: auto;
+    padding: 16px;
+}
+.card__menu-content-title p,h3{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.card__menu-content-title{
+    padding: 16px;
 }
 
-.verification{
-    margin: -16px -80px -16px 16px;
-    width: 64px;
-    background-color: #99e2d0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0 15px 15px 0;
+.card__menu-content-check{
+    display: grid;
+    place-items: center;
+    background-color: #99E2D0;
+    margin-right: -60px;
+    width: 60px;
 }
 
-.verification__icon{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.card__menu:hover .card__menu-content-check{
+    margin-right: 0;
+}
+
+.card__menu-content-check i{
+    display: grid;
+    place-items:center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    color: #99E2D0;
 }
 
 .plats,.desserts{
