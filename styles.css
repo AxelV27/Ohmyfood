@@ -1,4 +1,57 @@
 @charset "UTF-8";
+@keyframes bar {
+  0% {
+    transform: scaleY(0.5);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+@keyframes disappear {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+/****** loader ******/
+.load {
+  display: flex;
+  place-items: center;
+  position: fixed;
+  inset: 0;
+  background-color: #ffffff;
+  opacity: 0.9;
+  height: 100vh;
+  z-index: 1;
+  justify-content: space-evenly;
+  animation: disappear 1500ms;
+  animation-fill-mode: both;
+}
+.load__bar {
+  background-color: #9356DC;
+  height: 20px;
+  width: 3vh;
+  border-radius: 20px;
+  animation: bar 1500ms;
+}
+.load__bar--1 {
+  animation-delay: 200ms;
+}
+.load__bar--2 {
+  animation-delay: 400ms;
+}
+.load__bar--3 {
+  animation-delay: 600ms;
+}
+.load__bar--4 {
+  animation-delay: 800ms;
+}
+.load__bar--5 {
+  animation-delay: 1000ms;
+}
+
 /****** Général ******/
 * {
   font-family: "Roboto", sans-serif;

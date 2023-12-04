@@ -79,7 +79,7 @@
 }
 
 .desserts {
-  animation-delay: 300ms;
+  animation-delay: 400ms;
 }
 
 .card__menu {
@@ -165,4 +165,7 @@
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   border: none;
   margin: 40px 0px;
+}
+.boutton__commander:hover {
+  opacity: 0.9;
 }/*# sourceMappingURL=page_restaurant.css.map */
