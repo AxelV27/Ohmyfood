@@ -30,7 +30,7 @@
         animation: disappear 1500ms;
         animation-fill-mode: both;
         &__bar{
-            background-color: #9356DC;
+            background-color:var(--Green);
             height: 20px;
             width: 3vh;
             border-radius: 20px;
