@@ -169,4 +169,9 @@
 }
 .boutton__commander:hover {
   opacity: 0.9;
+}
+
+/**** footer *****/
+.footer__menu {
+  padding-top: 230px;
 }/*# sourceMappingURL=page_restaurant.css.map */

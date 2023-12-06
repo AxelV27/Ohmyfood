@@ -265,7 +265,6 @@ footer{
     color: white;
     background-color:#353535;
     padding:22px 25px;
-    padding-top: 220px;
     img{
         width: 139px;
         margin-bottom: 16px;
@@ -317,4 +316,12 @@ footer a:hover{
 
 
         
+}
+
+
+/*** pc ***/
+@media (min-width:1025px){
+    .header__logo{
+        box-shadow:none;
+    }
 }

@@ -255,7 +255,6 @@ footer {
   color: white;
   background-color: #353535;
   padding: 22px 25px;
-  padding-top: 220px;
 }
 footer img {
   width: 139px;
@@ -297,5 +296,11 @@ footer a:hover {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+}
+/*** pc ***/
+@media (min-width: 1025px) {
+  .header__logo {
+    box-shadow: none;
   }
 }/*# sourceMappingURL=styles.css.map */
