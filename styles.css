@@ -143,11 +143,11 @@ header {
   margin-left: 20px;
 }
 
-.fontionnement__card {
+.fonctionnement__card {
   display: flex;
   flex-direction: column;
 }
-.fontionnement__card .card {
+.fonctionnement__card .card {
   display: flex;
   flex-direction: row;
 }
@@ -284,6 +284,7 @@ footer a:hover {
     width: 100%;
     display: flex;
     justify-content: center;
+    box-shadow: none;
   }
   /**** main ****/
   /*restaurants*/
@@ -302,5 +303,31 @@ footer a:hover {
 @media (min-width: 1025px) {
   .header__logo {
     box-shadow: none;
+  }
+  .fonctionnement {
+    padding: 50px 180px;
+  }
+  .fonctionnement__card {
+    display: flex;
+    flex-direction: row;
+  }
+  .fonctionnement__card .card .title__card {
+    white-space: nowrap;
+    margin: 0 38px 0 27px;
+  }
+  .restaurant {
+    padding: 2px 180px;
+    margin-top: 0;
+  }
+  footer {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .footer__liens {
+    flex-direction: row;
+    margin-top: 23px;
+  }
+  .footer__liens a {
+    margin-right: 10px;
   }
 }/*# sourceMappingURL=styles.css.map */
