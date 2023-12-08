@@ -49,10 +49,12 @@
 .menu__title .fa-regular {
   position: absolute;
   right: 15px;
+  font-size: 20px;
 }
 .menu__title .fa-solid {
   position: absolute;
   right: 15px;
+  font-size: 20px;
   color: transparent;
   background-image: linear-gradient(#9356DC, #FF79DA);
   background-clip: text;
@@ -177,12 +179,32 @@
 }
 
 /**** tablette****/
+@media (min-width: 768px) {
+  .menu {
+    padding: 0 210px;
+  }
+  .menu .menu__title .fa-regular {
+    right: 210px;
+  }
+  .menu .menu__title .fa-solid {
+    right: 210px;
+  }
+}
 @media (min-width: 1025px) {
   .menu {
     margin-left: 192px;
     margin-right: 192px;
     background-color: #eaeaea;
     padding: 50px 210px 0 210px;
+  }
+  .menu .menu__title {
+    justify-content: center;
+  }
+  .menu .menu__title .fa-regular {
+    right: 265px;
+  }
+  .menu .menu__title .fa-solid {
+    right: 265px;
   }
   .card__menu {
     background-color: white;

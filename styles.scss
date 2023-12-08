@@ -1,4 +1,4 @@
-@keyframes bar {
+@keyframes point {
     0%{
         transform: scaleY(0.5);
     }
@@ -30,11 +30,11 @@
         animation: disappear 1500ms;
         animation-fill-mode: both;
         &__bar{
-            background-color:var(--Green);
+            background-color:var(--primary);
             height: 20px;
             width: 3vh;
             border-radius: 20px;
-            animation:bar 1500ms;
+            animation: point 1500ms;
             &--1{
                 animation-delay: 200ms;
             }
@@ -230,11 +230,13 @@ header{
                 position: absolute;
                 right: 15px;
                 bottom: 20px;
+                font-size: 20px;
             }
             .fa-solid{
                 position: absolute;
                 right: 15px;
                 bottom: 20px;
+                font-size: 20px;
                 color: transparent;
                 background-image: linear-gradient(#9356DC,#FF79DA);
                 background-clip:text;
