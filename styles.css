@@ -26,7 +26,7 @@
   height: 100vh;
   z-index: 1;
   justify-content: space-evenly;
-  animation: disappear 1500ms;
+  animation: disappear 2000ms;
   animation-fill-mode: both;
 }
 .load__bar {
@@ -34,7 +34,8 @@
   height: 20px;
   width: 3vh;
   border-radius: 20px;
-  animation: point 1500ms;
+  animation: point 2000ms;
+  transform: scale(0);
 }
 .load__bar--1 {
   animation-delay: 200ms;
@@ -307,7 +308,8 @@ footer a:hover {
     box-shadow: none;
   }
   .fonctionnement {
-    padding: 50px 180px;
+    max-width: 1080px;
+    margin: 0 auto;
   }
   .fonctionnement__card {
     display: flex;
@@ -317,9 +319,12 @@ footer a:hover {
     white-space: nowrap;
     margin: 0 38px 0 27px;
   }
-  .restaurant {
-    padding: 2px 180px;
-    margin-top: 0;
+  .restaurant__global {
+    margin: 0 auto;
+    max-width: 1080px;
+  }
+  .section__restaurants a {
+    max-width: 490px;
   }
   footer {
     display: flex;
