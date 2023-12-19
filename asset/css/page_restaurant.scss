@@ -18,7 +18,7 @@
     justify-content: space-between;
     a {
         position: absolute;
-        padding-left: 17px;
+        margin-left: 15px
     }
 }
  
@@ -72,7 +72,9 @@
 
 .title__menu{
     margin-left: 10px;
+    span{
     text-decoration: underline #99E2D0 3px;
+    }
 }
 
 .entrees,.plats,.desserts{
@@ -183,6 +185,7 @@
     margin: 40px 0px;
     &:hover{
         opacity: 0.9;
+        box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.25);
     }
 }
 
@@ -194,32 +197,43 @@
 
  /**** tablette****/
 @media (min-width:768px){
+
+    .header__menu{
+        a{
+            margin-left: -160px;
+        }
+    }
     .menu{
         .menu__title{
             justify-content: center;
             .fa-regular{
-                right: 210px;
+                right: 320px;
             }
 
             .fa-solid{
-                right: 210px;
+                right: 320px;
             }
         }
     }
 }
 
 @media (min-width : 1025px){
+    .header__menu{
+        a{
+            margin-left: -300px;
+        }
+    }
     .menu{
         max-width: 1055px;
         margin: 0 auto;
-        background-color: #eaeaea;
+        background-color: #f6f6f6;
         .menu__title{
             justify-content: center;
             .fa-regular{
-                right: 265px;
+                right: 370px;
             }
             .fa-solid{
-                right: 265px;
+                right: 370px;
             }
 
         }
