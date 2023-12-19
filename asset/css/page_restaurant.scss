@@ -22,6 +22,12 @@
     }
 }
  
+.header__logo-menu{
+    padding: 14px 89px 14px 89px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 /****** Main *****/
 
 
@@ -78,18 +84,18 @@
 }
 
 .entrees,.plats,.desserts{
-    animation: menuAppear 600ms;
+    animation: menuAppear 3000ms;
     animation-timing-function: cubic-bezier(.5,1.58,.34,.82);
     animation-fill-mode: both;
     transform: scale(0);
    }
 
 .plats{
-    animation-delay: 200ms; 
+    animation-delay: 1000ms; 
 }
 
 .desserts{
-    animation-delay: 400ms;
+    animation-delay: 2000ms;
 }
 
 
@@ -195,27 +201,7 @@
     margin-top: 220px;
 }
 
- /**** tablette****/
-@media (min-width:768px){
-
-    .header__menu{
-        a{
-            margin-left: -160px;
-        }
-    }
-    .menu{
-        .menu__title{
-            justify-content: center;
-            .fa-regular{
-                right: 320px;
-            }
-
-            .fa-solid{
-                right: 320px;
-            }
-        }
-    }
-}
+ 
 
 @media (min-width : 1025px){
     .header__menu{
